@@ -58,7 +58,7 @@ log_r_limit = np.log10(r_limit)  # ≈ -30.77
 ax.axvline(log_r_limit, color='gray', linestyle=':', alpha=0.7, label=r'$r_c \approx 1.7 \times 10^{-31}$ m')
 
 # Boundary contour for eta=1 (transition)
-ax.contour(LogR, LogM, log_eta, levels=[0], colors='black', linestyles='-', linewidth=1.5, alpha=0.8)
+ax.contour(LogR, LogM, log_eta, levels=[0], colors='black', linestyles='-', linewidths=1.5, alpha=0.8)
 
 # Labels for regions
 ax.text(0, 0, 'Classical', ha='center', va='center', fontsize=12, bbox=dict(boxstyle='round', facecolor='red', alpha=0.3))
@@ -69,7 +69,7 @@ ax.text(-10, -20, 'Biphasic', ha='center', va='center', fontsize=12, bbox=dict(b
 # H Atom: approx m ~ 1 ug = 1e-9 kg, log_m=-9; r~1.7e-31 m, log_r≈-30.8
 ax.plot(-30.8, -9, 'ko', markersize=8, label='H Atom')
 
-# FDM Halo: m < 1.8e-35 kg, say point at m=1e-35, r= some, but approx log_m=-35, log_r=0 (arbitrary for halo scale)
+# FDM Halo: m < 1.8e-35 kg, say point at m=1e-35, log_r=0 (arbitrary for halo scale)
 ax.plot(0, -35, 'gs', markersize=8, label='FDM Halo')
 
 # Plot limits
